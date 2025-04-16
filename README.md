@@ -1,25 +1,25 @@
-# 🛡️ Smart Attendance System using RFID + Fingerprint + Ultrasonic
+#  Smart Attendance System using RFID + Fingerprint + Ultrasonic
 
 A complete end-to-end attendance system that combines RFID cards, fingerprint scanning, and ultrasonic presence detection. The system logs access events locally and visually using a real-time Streamlit dashboard, storing all data in a CSV file.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- ✅ RFID Authentication (via MFRC522)
-- ✅ Fingerprint Matching (via R307 module)
-- ✅ Ultrasonic Sensing (system powers ON only when user is within 25 cm)
-- ✅ EEPROM Storage of enrolled UID ↔ Fingerprint pairs
-- ✅ Serial Logging:
+-  RFID Authentication (via MFRC522)
+-  Fingerprint Matching (via R307 module)
+-  Ultrasonic Sensing (system powers ON only when user is within 25 cm)
+-  EEPROM Storage of enrolled UID ↔ Fingerprint pairs
+-  Serial Logging:
   - UID
   - Fingerprint ID
   - Distance from ultrasonic
   - Access status (Granted/Denied)
-- ✅ Streamlit Dashboard:
+-  Streamlit Dashboard:
   - Live ultrasonic feed
   - Access event log
   - Downloadable CSV
-- ✅ Menu-driven Serial Interface:
+-  Menu-driven Serial Interface:
   - `E` → Enroll (pair UID + Finger ID)
   - `L` → Login
   - `I` → List all users
@@ -28,9 +28,9 @@ A complete end-to-end attendance system that combines RFID cards, fingerprint sc
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
-### 👣 Login Flow:
+###  Login Flow:
 
 1. Ultrasonic sensor detects user presence **within 25 cm**
 2. RFID card is scanned
@@ -42,7 +42,7 @@ All events are logged to Serial and CSV.
 
 ---
 
-## 🧰 Hardware Required
+##  Hardware Required
 
 | Component             | Description                     |
 |----------------------|---------------------------------|
@@ -54,7 +54,7 @@ All events are logged to Serial and CSV.
 
 ---
 
-## 🔌 Wiring Overview
+##  Wiring Overview
 
 | Module       | Arduino Pins            |
 |--------------|--------------------------|
@@ -66,7 +66,7 @@ Make sure to power R307 via 5V external supply if needed.
 
 ---
 
-## 🧑‍💻 Setup & Run
+##  Setup & Run
 
 ### 1️⃣ Flash Arduino Code
 
@@ -88,7 +88,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Smart_Attendance_System/
@@ -102,9 +102,9 @@ Smart_Attendance_System/
 
 ---
 
-## 🧪 Sample Output
+##  Sample Output
 
-### 📟 Serial Monitor:
+###  Serial Monitor:
 ```
 [Ultrasonic] Distance = 21 cm
 ⚡ System powered ON by user presence.
@@ -115,7 +115,7 @@ Smart_Attendance_System/
 LOG,D1:81:C0:01,5,21,Access Granted
 ```
 
-### 📄 CSV Log:
+###  CSV Log:
 ```
 Timestamp,UID,Fingerprint ID,Distance (cm),Access
 2025-04-16 18:05:22,D1:81:C0:01,5,21,Access Granted
@@ -130,7 +130,7 @@ Timestamp,UID,Fingerprint ID,Distance (cm),Access
 
 ---
 
-## 📈 Future Add-ons
+##  Future Add-ons
 
 - SD card backup logging
 - Wi-Fi or GSM cloud sync
@@ -140,13 +140,13 @@ Timestamp,UID,Fingerprint ID,Distance (cm),Access
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Made by Surya  
 Powered by Arduino + Python + Streamlit
 
 ---
 
-## 📜 License
+##  License
 
 This project is open source under the MIT License.
