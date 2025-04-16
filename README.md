@@ -123,7 +123,7 @@ Timestamp,UID,Fingerprint ID,Distance (cm),Access
 
 ---
 
-## 🛠 Reset & Safety
+##  Reset & Safety
 
 - `R` command prints EEPROM dump and asks for confirmation
 - Type `'Y'` to proceed — this clears EEPROM and fingerprint DB
