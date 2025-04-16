@@ -142,7 +142,7 @@ Timestamp,UID,Fingerprint ID,Distance (cm),Access
 
 ## 👨‍💻 Author
 
-Made with ❤️ by [Your Name]  
+Made by Surya  
 Powered by Arduino + Python + Streamlit
 
 ---
